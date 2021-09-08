@@ -13,3 +13,4 @@ CREATE TABLE Planetas(
 GO 
 ALTER TABLE Planetas ADD CONSTRAINT Pk_Planetas PRIMARY KEY (IdPlaneta);
 ```
+Cria uma tabela e adicione uma chave primária, o id que não pode se repetir.
