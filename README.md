@@ -84,3 +84,5 @@ ALTER TABLE HistoricoViagens CHECK CONSTRAINT FK_HistoricoViagens_PilotosNaves
 con = new SqlConnection(@"Data Source=MAKI\MSSQLSERVER02;Initial Catalog=EstrelaDaMorte;Integrated Security=True;Connect Timeout=30");
 ```
 Substitua o `MAKI\MSSQLSERVER02` pelo path do seu banco de dados
+
+- Depois abra o projeto no Visual Studio clicando duas vezes no arquivo `ControleAcessoEstrelaDaMorte.sln`. Para executar o projeto clique no botão de executar o arquivo `Program.cs`.
