@@ -15,11 +15,11 @@ ALTER TABLE Planetas ADD CONSTRAINT Pk_Planetas PRIMARY KEY (IdPlaneta);
 ```
 Cria uma tabela e adicione uma chave primária, o id que não pode se repetir.
 
-Também crie a tabela Naves: 
+Crie a tabela Naves (jeito 2 de criar uma tabela): 
 
 ![tabela](https://user-images.githubusercontent.com/72028645/132556976-0c8ab6cd-1747-4532-9d2f-63461da035c8.png)
 
-E for fim a tabela Pilotos:
+Crie a tabela Pilotos:
 ```
 CREATE TABLE Pilotos(
 	IdPiloto int NOT NULL,
@@ -32,4 +32,23 @@ ALTER TABLE Pilotos ADD CONSTRAINT Pk_Pilotos PRIMARY KEY (IdPiloto);
 GO
 ALTER TABLE Pilotos ADD CONSTRAINT FK_Pilotos_Planetas FOREIGN KEY (IdPlaneta)
 REFERENCES Planetas (IdPlaneta)
+```
+
+Crie a tabela PilotosNaves:
+```
+CREATE TABLE PilotosNaves(
+	IdPiloto int NOT NULL,
+	IdNave int NOT NULL,
+	FlagAutorizado bit NOT NULL,
+)
+GO 
+ALTER TABLE PilotosNaves ADD CONSTRAINT PK_PilotosNaves PRIMARY KEY (IdPiloto, IdNave);
+GO 
+ALTER TABLE PilotosNaves ADD CONSTRAINT FK_PilotosNaves_Pilotos FOREIGN KEY(IdPiloto)
+REFERENCES Pilotos (IdPiloto)
+GO
+ALTER TABLE PilotosNaves ADD CONSTRAINT FK_PilotosNaves_Naves FOREIGN KEY(IdNave)
+REFERENCES Naves (IdNave)
+GO
+ALTER TABLE PilotosNaves ADD CONSTRAINT DF_PilotosNaves_FlagAutorizado DEFAULT (1) FOR FlagAutorizado
 ```
