@@ -1,4 +1,11 @@
 # Modelando um banco de dados na prática com SQL SERVER
+## Requisitos
+- Microsoft SQL Server Management Studio
+- Visual Studio
+
+## Licença
+Distribuido sob a licença MIT License. Veja `LICENSE` para mais informações.
+
 1) Criar tabelas
 
 No `Microsoft SQL Server Management Studio` crie a tabela Planetas:
