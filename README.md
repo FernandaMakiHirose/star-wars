@@ -1,4 +1,6 @@
 # Modelando um banco de dados na prática com SQL SERVER
+1) Criar tabelas
+
 No `Microsoft SQL Server Management Studio` crie a tabela Planetas:
 ```
 CREATE TABLE Planetas(
@@ -68,3 +70,9 @@ REFERENCES PilotosNaves (IdPiloto, IdNave)
 GO
 ALTER TABLE HistoricoViagens CHECK CONSTRAINT FK_HistoricoViagens_PilotosNaves
 ```
+
+2) Após clonar o projeto, no arquivo `DaoBase.cs` existe o código:
+```
+con = new SqlConnection(@"Data Source=MAKI\MSSQLSERVER02;Initial Catalog=EstrelaDaMorte;Integrated Security=True;Connect Timeout=30");
+```
+Substitua o `MAKI\MSSQLSERVER02` pelo path do seu banco de dados
