@@ -86,3 +86,31 @@ con = new SqlConnection(@"Data Source=MAKI\MSSQLSERVER02;Initial Catalog=Estrela
 Substitua o `MAKI\MSSQLSERVER02` pelo path do seu banco de dados
 
 3) Abra o projeto no Visual Studio clicando duas vezes no arquivo `ControleAcessoEstrelaDaMorte.sln`. Para executar o projeto clique no botão de executar o arquivo `Program.cs`.
+
+## Quiz
+### Qual desses é o comando utilizado para a consulta da base da API?
+select * from Tabela
+
+### Para filtrar o conteúdo selecionado de uma API utilizamos o comando:
+where
+
+### São consideradas boas práticas para a criação de tabelas:
+Criação de tabelas no plural, nomes claros e objetivos
+
+### O tipo de dado 'bit' representa:
+um valor booleano
+
+### Sobre chaves estrangeiras, é correto afirmar:
+É uma referência em uma tabela a uma chave primária de outra tabela
+
+### Um banco de dados relacional pressupõe:
+Que as tabelas se relacionam para gerar o controle dos dados
+
+### Qual o objetivo de obter um diagrama de banco de dados?
+Identificar mais facilmente como funciona o sistema, assim como a tabela principal (core) do sistema
+
+### Sobre a sintaxe do comando DELETE, qual alternativa está correta?
+DELETE [tabela.*] FROM tabela WHERE critério
+
+### Sobre chaves primárias, é correto afirmar:
+Ela não pode ser duplicada
