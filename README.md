@@ -52,3 +52,19 @@ REFERENCES Naves (IdNave)
 GO
 ALTER TABLE PilotosNaves ADD CONSTRAINT DF_PilotosNaves_FlagAutorizado DEFAULT (1) FOR FlagAutorizado
 ```
+
+E por fim crie a tabela HistoricoViagens:
+```
+CREATE TABLE HistoricoViagens(
+	IdNave int NOT NULL,
+	IdPiloto int NOT NULL,
+	DtSaida datetime NOT NULL,
+	DtChegada datetime NULL,
+)
+GO 
+
+ALTER TABLE HistoricoViagens ADD CONSTRAINT FK_HistoricoViagens_PilotosNaves FOREIGN KEY(IdPiloto, IdNave)
+REFERENCES PilotosNaves (IdPiloto, IdNave)
+GO
+ALTER TABLE HistoricoViagens CHECK CONSTRAINT FK_HistoricoViagens_PilotosNaves
+```
