@@ -1,5 +1,5 @@
 # Modelando um banco de dados na prática com SQL SERVER
-No `Microsoft SQL Server Management Studio` crie a tabela:
+No `Microsoft SQL Server Management Studio` crie a tabela Planetas:
 ```
 CREATE TABLE Planetas(
 	IdPlaneta int NOT NULL,
@@ -14,3 +14,5 @@ GO
 ALTER TABLE Planetas ADD CONSTRAINT Pk_Planetas PRIMARY KEY (IdPlaneta);
 ```
 Cria uma tabela e adicione uma chave primária, o id que não pode se repetir.
+
+Também crie a tabela Naves:
