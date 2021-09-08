@@ -6,6 +6,7 @@
 ## Licença
 Distribuido sob a licença MIT License. Veja `LICENSE` para mais informações.
 
+## Guia
 1) Criar tabelas
 
 No `Microsoft SQL Server Management Studio` crie a tabela Planetas:
