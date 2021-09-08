@@ -1,4 +1,6 @@
 # Modelando um banco de dados na prática com SQL SERVER
+Gerenciador de espaço naves do Star Wars modelando um banco de dados em SQL Server. A missão foi entregar os scripts de criação das tabelas que compõem a estrutura desse banco de dados. 
+
 ## Requisitos
 - Microsoft SQL Server Management Studio
 - Visual Studio
